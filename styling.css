@@ -1,18 +1,58 @@
+/*  *{
+	Gives global control
+}  */
+
 body{
 	background-color: #e3ddc5;
 	color: #123e61;
 	font: normal 16px "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	line-height: 1.5em;
-	width: 80%;
-	margin: auto;
+}
+a{
+	text-decoration: none;
+	color: #123e61;
+}
+a:hover{
+	color: #ee3955;
+}
+a:active{
+	color: #ffc332;
 }
 .objClas-1{
 	background-color: #bada55;
-	margin: 1em;
+	width: 80%;
+	margin: auto;
 	padding: 1em;
+	border: .5em #bada55 solid;
+	border-radius: 20px;
+}.objClas-1 ul{
+	padding: 0;
+	list-style: none;
 }
 .objClas-2{
 	/* background-color: #bada55; */
-	margin: 1em;
+	width: 80%;
+	margin: auto;
 	padding: 1em;
+}
+.objClas-2 ul{
+	list-style: none;
+}
+.returnClass{
+	background-color: #bada55;
+	display: inline;
+	margin: .3em;
+	padding: .3em;
+	border: .3em #bada55 solid;
+	border-radius: 20px;
+}
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	width: 100%;
+	padding: 1em;
+	position: fixed;
+	bottom: 0;
+	left: 0;
 }
