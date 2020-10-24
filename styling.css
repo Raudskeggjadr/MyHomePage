@@ -1,15 +1,18 @@
 /*  *{
 	Gives global control
-}  */
+	}  */
 
 body{
-	background-color: #282721;
+	background-color: #756969;
 	color: #f6f4f1;
 	font: normal 16px "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	line-height: 1.5em;
+	padding: 0;
+	margin: 0;
 }
 a{
 	text-decoration: none;
+	text-transform: uppercase;
 	color: #f6f4f1;
 }
 a:hover{
@@ -18,25 +21,56 @@ a:hover{
 a:active{
 	color: #ffc332;
 }
-.objClas-1{
-	background-color: #442200;
-	width: 80%;
-	margin: auto;
-	padding: 1em;
-	border: .5em #442200 solid;
-	border-radius: 20px;
-}.objClas-1 ul{
+ul{
+	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-.objClas-2{
-	/* background-color: #bada55; */
+header li{
+	float: left;
+	display: inline;
+	padding: 0em 2em 0em 2em;
+}
+header{
+	background-color: #3c4c5c;
+	padding-top: 2em;
+	min-height: 2em;
+	border-bottom: #ffc332 .5em solid;
+}
+header a{
+	color: #ffc332;
+}
+#mainTitle{
+	float: left;
+}
+#mainTitle h1{
+	margin: 0;
+}
+header nav{
+	float: right;
+	margin: 1em;
+}
+header .highlight, header .current a{
+	color: #e25402;
+}
+.siteTop{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+.objClas-1{
+	background-color: #3c4c5c;
 	width: 80%;
 	margin: auto;
 	padding: 1em;
+	border: .5em #3c4c5c solid;
+	border-radius: 20px;
+	margin-bottom: 6em;
 }
-.objClas-2 ul{
-	list-style: none;
+.objClas-2{
+	width: 50%;
+	margin: auto;
+	padding: 1em;
 }
 .returnClass{
 	background-color: #442200;
@@ -46,7 +80,7 @@ a:active{
 	border: .3em #442200 solid;
 	border-radius: 20px;
 }
-footer{
+.copyR{
 	background-color: black;
 	color: white;
 	text-align: center;
@@ -54,8 +88,19 @@ footer{
 	padding: 1em;
 	position: fixed;
 	bottom: 0;
-	left: 0;
 }
 #RODO{
-	margin: 0em 0em 6em 0em;
+	margin-bottom: 6em;
+}
+@media(max-width: 768px){
+	header #mainTitle,
+	header nav,
+	header nav li{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header{
+		padding-bottom: 5em;
+	}
 }
