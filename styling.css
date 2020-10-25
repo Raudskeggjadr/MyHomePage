@@ -3,83 +3,98 @@
 	}  */
 
 body{
-	background-color: #756969;
 	color: #f6f4f1;
-	font: normal 16px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font: normal 1em/1.5 "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	line-height: 1.5em;
 	padding: 0;
 	margin: 0;
+	background: #756969;
 }
+
 a{
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #f6f4f1;
+	font-size: 1.1em;
 }
+
 a:hover{
 	color: #ee3955;
+	font-weight: bold;
 }
+
 a:active{
 	color: #ffc332;
+	font-weight: bold;
 }
+
 ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-header li{
-	float: left;
-	display: inline;
-	padding: 0em 2em 0em 2em;
-}
+
 header{
 	background-color: #3c4c5c;
 	padding-top: 2em;
-	min-height: 2em;
+	min-height: 5em;
 	border-bottom: #ffc332 .5em solid;
 }
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0em 1em 0em 1em;
+}
+
 header a{
 	color: #ffc332;
 }
+
 #mainTitle{
 	float: left;
 }
+
 #mainTitle h1{
 	margin: 0;
 }
+
 header nav{
 	float: right;
-	margin: 1em;
+	margin-top: 1em;
 }
+
 header .highlight, header .current a{
 	color: #e25402;
+	font-weight: bold;
 }
+
+#hideIt{
+	color: #3c4c5c;
+}
+
 .siteTop{
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
 }
+
 .objClas-1{
 	background-color: #3c4c5c;
 	width: 80%;
 	margin: auto;
 	padding: 1em;
 	border: .5em #3c4c5c solid;
-	border-radius: 20px;
+	border-radius: 2em;
 	margin-bottom: 6em;
 }
+
 .objClas-2{
 	width: 50%;
 	margin: auto;
 	padding: 1em;
 }
-.returnClass{
-	background-color: #442200;
-	display: inline;
-	margin: .3em;
-	padding: .3em;
-	border: .3em #442200 solid;
-	border-radius: 20px;
-}
+
 .copyR{
 	background-color: black;
 	color: white;
@@ -89,9 +104,13 @@ header .highlight, header .current a{
 	position: fixed;
 	bottom: 0;
 }
+
 #RODO{
 	margin-bottom: 6em;
 }
+
+/* Dictates what happens when the screen is small enough */
+
 @media(max-width: 768px){
 	header #mainTitle,
 	header nav,
@@ -101,6 +120,11 @@ header .highlight, header .current a{
 		width: 100%;
 	}
 	header{
-		padding-bottom: 5em;
+		padding-bottom: 1em;
 	}
+
+	header li{
+		margin: 1em 0em 1em 0em;
+	}
+
 }
