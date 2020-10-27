@@ -2,7 +2,7 @@
 	Gives global control
 	}  */
 
-body{
+body {
 	color: #f6f4f1;
 	font: normal 1em/1.5 "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	line-height: 1.5em;
@@ -11,107 +11,174 @@ body{
 	background: #756969;
 }
 
-a{
+.landing::after {
+    content: '';
+    height: 100vh;
+	width: 100%;
+	margin-top: 5em;
+    background-image: url(bgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(0px);
+    transition: all 1000ms;
+}
+
+.landing:hover::after {
+    filter: blur(10px);
+}
+
+.landing:hover .content {
+    filter: blur(0px);
+}
+
+.content {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 10em;
+    margin-left: -10em;
+    width: 20em;
+    height: 10em;
+    text-align: center;
+    filter: blur(2px);
+    transition: all 1000ms;
+}
+
+.content .head {
+    height: 10em;
+	border: .5em #3c4c5c solid;
+	border-radius: 2em;
+}
+
+.content .landingTXT {
+    font-size: 2.2rem;
+	margin-top: 1rem;
+	color: #605b4f;
+	line-height: 1em;
+}
+
+a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #f6f4f1;
 	font-size: 1.1em;
 }
 
-a:hover{
+a:hover {
 	color: #ee3955;
 	font-weight: bold;
 }
 
-a:active{
+a:active {
 	color: #ffc332;
 	font-weight: bold;
 }
 
-ul{
+ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-header{
+header {
 	background-color: #3c4c5c;
+    z-index: 2;
 	padding-top: 2em;
 	min-height: 5em;
+	width: 100%;
 	border-bottom: #ffc332 .5em solid;
+	position: fixed;
+	top: 0;
 }
 
-header li{
+header li {
 	float: left;
 	display: inline;
 	padding: 0em 1em 0em 1em;
 }
 
-header a{
+header a {
 	color: #ffc332;
 }
 
-#mainTitle{
+#mainTitle {
 	float: left;
 }
 
-#mainTitle h1{
+#mainTitle h1 {
 	margin: 0;
 }
 
-header nav{
+header nav {
 	float: right;
 	margin-top: 1em;
 }
 
-header .highlight, header .current a{
+header .highlight, header .current a {
 	color: #e25402;
 	font-weight: bold;
 }
 
-#hideIt{
+#hideIt {
 	color: #3c4c5c;
 }
 
-.siteTop{
+.siteTop {
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
 }
 
-.objClas-1{
+.objClas-1 {
 	background-color: #3c4c5c;
 	width: 80%;
-	margin: auto;
-	padding: 1em;
 	border: .5em #3c4c5c solid;
 	border-radius: 2em;
-	margin-bottom: 6em;
-}
-
-.objClas-2{
-	width: 50%;
-	margin: auto;
 	padding: 1em;
+	margin: auto;
+	margin-top: 7em;
+	margin-bottom: 7em;
 }
 
-.copyR{
+.welcoming {
+	margin-top: 0em;
+}
+
+.objClas-2 {
+	width: 50%;
+	padding: 1em;
+	margin: auto;
+	margin-top: 7em;
+	margin-bottom: 7em;
+}
+
+.copyR {
 	background-color: black;
 	color: white;
 	text-align: center;
+	text-shadow: 4px 2px 2px rgb(253, 105, 130);
 	width: 100%;
 	padding: 1em;
 	position: fixed;
 	bottom: 0;
 }
 
-#RODO{
-	margin-bottom: 6em;
-}
-
 /* Dictates what happens when the screen is small enough */
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
+	.landing::after, .landing:hover::after {
+		filter: blur(10px);
+	}
+	.content {
+		filter: blur(0px);
+	}
+	.content .landingTXT {
+		color: black;
+		text-shadow: whitesmoke -2px -2px .2em;
+	}
 	header #mainTitle,
 	header nav,
 	header nav li{
@@ -126,5 +193,14 @@ header .highlight, header .current a{
 	header li{
 		margin: 1em 0em 1em 0em;
 	}
+	.objClas-1 {
+		margin-top: 10em;
+	}
+	.welcoming {
+		margin-top: 0;
+	}
+	.objClas-2 {
+		width: 90%;
+		margin-top: 10em;
 
 }
