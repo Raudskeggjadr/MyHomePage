@@ -11,6 +11,79 @@ body {
 	background: #756969;
 }
 
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #f6f4f1;
+	font-size: 1.1em;
+}
+
+a:hover {
+	color: #ee3955;
+	font-weight: bold;
+}
+
+a:active {
+	color: #ffc332;
+	font-weight: bold;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header {
+	background-color: #3c4c5c;
+    z-index: 2;
+	padding-top: 2em;
+	min-height: 5em;
+	width: 100%;
+	border-bottom: #ffc332 .1em solid;
+	position: fixed;
+	top: 0;
+    box-shadow: 0em 0.5em 2em rgba(0,0,0,0.6);
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0em 1em 0em 1em;
+}
+
+header a {
+	color: #ffc332;
+}
+
+#mainTitle {
+	float: left;
+}
+
+#mainTitle h1 {
+	margin: 0;
+}
+
+header nav {
+	float: right;
+	margin-top: 1em;
+}
+
+header .highlight, header .current a {
+	color: #e25402;
+	font-weight: bold;
+}
+
+#hideIt {
+	color: #3c4c5c;
+}
+
+.siteTop {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
 .landing::after {
     content: '';
     height: 100vh;
@@ -56,80 +129,13 @@ body {
 .content .landingTXT {
     font-size: 2.2rem;
 	margin-top: 1rem;
-	color: #605b4f;
+	color: #25303a;
 	line-height: 1em;
-}
-
-a {
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #f6f4f1;
-	font-size: 1.1em;
-}
-
-a:hover {
-	color: #ee3955;
-	font-weight: bold;
-}
-
-a:active {
-	color: #ffc332;
-	font-weight: bold;
-}
-
-ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-header {
-	background-color: #3c4c5c;
-    z-index: 2;
-	padding-top: 2em;
-	min-height: 5em;
-	width: 100%;
-	border-bottom: #ffc332 .5em solid;
-	position: fixed;
-	top: 0;
-}
-
-header li {
-	float: left;
-	display: inline;
-	padding: 0em 1em 0em 1em;
-}
-
-header a {
-	color: #ffc332;
-}
-
-#mainTitle {
-	float: left;
-}
-
-#mainTitle h1 {
-	margin: 0;
-}
-
-header nav {
-	float: right;
-	margin-top: 1em;
-}
-
-header .highlight, header .current a {
-	color: #e25402;
-	font-weight: bold;
-}
-
-#hideIt {
-	color: #3c4c5c;
-}
-
-.siteTop {
-	width: 80%;
-	margin: auto;
-	overflow: hidden;
+	background: linear-gradient(90deg,
+	rgba(255, 255, 255, 0) 0%,
+	rgba(255, 255, 255, 0.2) 15%,
+	rgba(255, 255, 255, 0.2) 85%,
+	rgba(255, 255, 255, 0) 100%);
 }
 
 .objClas-1 {
@@ -141,6 +147,7 @@ header .highlight, header .current a {
 	margin: auto;
 	margin-top: 7em;
 	margin-bottom: 7em;
+    box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.6), -1em 1em 1em rgba(0,0,0,0.6);
 }
 
 .welcoming {
@@ -174,10 +181,6 @@ header .highlight, header .current a {
 	}
 	.content {
 		filter: blur(0px);
-	}
-	.content .landingTXT {
-		color: black;
-		text-shadow: whitesmoke -2px -2px .2em;
 	}
 	header #mainTitle,
 	header nav,
